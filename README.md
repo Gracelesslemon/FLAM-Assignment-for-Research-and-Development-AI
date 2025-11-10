@@ -59,13 +59,4 @@ $$X = 54.9$$
 $$L1 =  25.24340278201307$$
 
 This reuslt solidified that i have exhausted gridsearch's capability.
-## What i would have done next:
-- I would have now moved on to local optimization (maybe using scipy).
-  - Tested the different methods
-- try different starting points 
-  - reasoning : i from the graph i can see we have multipl local minima's so i want to see what there l1 score would be
-- Maybe use a global optimizer to find the best local.
 
-# time constraint :
-- received this mail on 10/11/25 at 9:30.
-- i could only manage this much in 5 hours. (form to submit : 3 pm)
