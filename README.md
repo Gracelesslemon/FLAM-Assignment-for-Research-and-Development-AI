@@ -3,9 +3,7 @@
 # Problem Statement:
 Find the values of unknown variables in the given parametric equation of a curve :
 
-$$
-x=\left(t*\cos(\theta)-e^{M\left|t\right|}\cdot\sin(0.3t)\sin(\theta)\ +X \right )
-$$
+$$x=\left(t*\cos(\theta)-e^{M\left|t\right|}\cdot\sin(0.3t)\sin(\theta)\ +X \right )$$
 $$
 y = \left (42 + t*\sin(\theta)+e^{M\left|t\right|}\cdot\sin(0.3t)\cos(\theta)\right)
 $$
@@ -32,8 +30,9 @@ From the plot itself we can calculate a rough estimate of theta.
 ![alt text](image.png)
 
 We can see that the plot is mostly dictated by 
-$$x \approx t \cdot \cos(\theta)+X$$
-$$y \approx t \cdot \sin(\theta) +42$$
+
+$$ x \approx t \cdot \cos(\theta)+X $$
+$$ y \approx t \cdot \sin(\theta) +42 $$
 then the other terms would dictate the curves\
 we can approximately find the slope
 $$ start : (60,46)$$
@@ -46,11 +45,14 @@ $$\theta = 24.6 approx$$
 ## Gridsearch:
 My first bruteforce/Naive approach was to gridsearch.
 Its given that the L1 distance has to be minimum. Using this the initial gridsearch gave me(4.2 sec) :
+
 $$θ = 28.0$$
 $$M = 0.020000000000000004$$
 $$X = 55.0$$
 $$L1 =  25.244341261851268$$
+
 Now using this result i searched nearby using a finer grid search. (2 min)
+
 $$θ = 28.125$$
 $$M = 0.021400000000000006$$
 $$X = 54.9$$
@@ -66,4 +68,4 @@ This reuslt solidified that i have exhausted gridsearch's capability.
 
 # time constraint :
 - received this mail on 10/11/25 at 9:30.
-- i could only manage this much in 5 hours
+- i could only manage this much in 5 hours. (form to submit : 3 pm)
