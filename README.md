@@ -87,5 +87,15 @@ X  :  54.9003484203334
 Min L1 :  25.243395891701628
 ```
 - Now the next step would be to find the best global minima and repeat above process of finding local minima.
+## Finding global minima using differential evolution
+The result from differential evolution using l1 as the objective functions give me estimates almost same as that of grid search.So by sheer luck gridsearch happen to already be placed i the global minima. So the best result gotten so far is the same.
+
+| Parameter | Value               |
+|------------|---------------------|
+| θ          | 28.120418061041402  |
+| M          | 0.021399674857236456 |
+| X          | 54.900061696638645  |
+| Min L1     | 25.24339796943881   |
+
 # Citation
 https://www.youtube.com/watch?v=N_8MyFjGc4A -> simplex method
