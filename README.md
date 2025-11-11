@@ -88,7 +88,7 @@ Min L1 :  25.243395891701628
 ```
 - Now the next step would be to find the best global minima and repeat above process of finding local minima.
 ## Finding global minima using differential evolution
-The result from differential evolution using l1 as the objective functions give me estimates almost same as that of grid search.So by sheer luck gridsearch happen to already be placed i the global minima. So the best result gotten so far is the same.
+The result from differential evolution using l1 as the objective functions give me estimates almost same as that of grid search.So by chance gridsearch was already near global minima. So the best result gotten so far is the same.
 
 | Parameter | Value               |
 |------------|---------------------|
@@ -97,5 +97,26 @@ The result from differential evolution using l1 as the objective functions give 
 | X          | 54.900061696638645  |
 | Min L1     | 25.24339796943881   |
 
+# Final Result:
+
+| Parameter | Value               |
+|------------|---------------------|
+| θ          | 28.120418061041402  |
+| M          | 0.021399674857236456 |
+| X          | 54.900061696638645  |
+| Min L1     | 25.24339796943881   |
+$$x = (t*cos(28.120418) - e^{0.021400|t|} * sin(0.3 t) * sin(28.120418) + 54.900062 $$
+$$y = 42 + t*sin(28.120418) + e^{0.021400|t|} * sin(0.3 t) * cos(28.120418))
+$$
+
+
 # Citation
-https://www.youtube.com/watch?v=N_8MyFjGc4A -> simplex method
+OpenAI. (2025). ChatGPT conversation on optimization and curve fitting (AI assistance). ChatGPT. Retrieved from https://chatgpt.com/share/691381fb-f084-8004-bc38-20f9e404c1a3
+
+SciPy Developers. (2024). scipy.optimize.minimize. SciPy v1.13.0 Manual. Retrieved from https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html
+
+SciPy Developers. (2024). scipy.optimize.differential_evolution. SciPy v1.13.0 Manual. Retrieved from https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.differential_evolution.html
+
+StatQuest with Josh Starmer. (2020, June 8). The Simplex Method - Linear Programming Made Simple [Video]. YouTube. Retrieved from https://www.youtube.com/watch?v=N_8MyFjGc4A
+
+Note: ChatGPT and Claude were used as support tools for proofreading, minor coding suggestions, and theoretical validation or guidance.
