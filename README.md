@@ -19,7 +19,7 @@ $$
 6<t<60
 $$
 
-# Apporach:
+# Approach:
 The given equation is non-linear and so linear regression was not possible.
 In the given x,y dataset t was not mentioned so I assumed t to be uniformly distributed.
 ## Plotting The graph:
@@ -58,5 +58,34 @@ $$M = 0.021400000000000006$$
 $$X = 54.9$$
 $$L1 =  25.24340278201307$$
 
-This reuslt solidified that i have exhausted gridsearch's capability.
+## Minimization using grid search output:
 
+Now that I did both grid search and a finer gridsearch I have arrived at an output.Now this output can still be minimized because maybe our values in gridsearch were too far apart. So here I use 2 minimization functions : powell and Nelder-Mead. I chose them because there are derivative free.
+
+After running them and looking at the results these are my conclusion:
+- Assuming this is the global minima this is the best answer you can get as both powell and Nelder-Mead converge to same value.
+
+```
+POWELL:
+Optimization terminated successfully.
+         Current function value: 25.243398
+         Iterations: 1
+         Function evaluations: 85
+θ  :  28.120418061041402
+M  :  0.021399674857236456
+X  :  54.900061696638645
+Min L1 :  25.24339796943881
+
+NELDER-MEAD:
+Optimization terminated successfully.
+         Current function value: 25.243396
+         Iterations: 93
+         Function evaluations: 172
+        θ  :  28.11842300222184
+M  :  0.021388957351028685
+X  :  54.9003484203334
+Min L1 :  25.243395891701628
+```
+- Now the next step would be to find the best global minima and repeat above process of finding local minima.
+# Citation
+https://www.youtube.com/watch?v=N_8MyFjGc4A -> simplex method
